@@ -46,11 +46,11 @@ function renderizarCartasNaTela(cartas) {
 
   for (let i = 0; i < cartas.length; i++) {
     deck.innerHTML += `
-            <li class="carta" onclick="virarCarta(this)">
-                <div data-test="card" class="front-face face">
+            <li data-test="card" class="carta" onclick="virarCarta(this)">
+                <div class="front-face face">
                     <img data-test="face-down-image" src="imagem/front.png">
                 </div>
-                <div data-test="card" class="back-face face">
+                <div class="back-face face">
                     <img data-test="face-up-image" src="imagem/${cartas[i]}parrot.gif" data-test="face-up-image">
                 </div>
             </li>`;
