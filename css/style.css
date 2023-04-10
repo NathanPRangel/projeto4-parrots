@@ -65,3 +65,17 @@ img {
 .virada .front-face {
     transform: rotateY(-180deg);
 }
+
+@media (max-width: 768px) {
+    .titulo {
+      font-size: 48px;
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carta {
+      width: 150px;
+      height: 200px;
+    }
+  }
